@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: lightgrey;
+  font-family: monospace;
+}
+
+.all-tasks {
+  list-style-type: none;
+  width: 50%;
+
+}
+
+.all-tasks li {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  margin: 10px;
+  background: rgb(170, 170, 170);
+  cursor: pointer;
+  transition: background .25s;
+  position: relative;
+}
+
+.all-tasks li:hover {
+  background: grey;
+  color: white;
+  overflow: hidden;
+}
+
+.all-tasks button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  border-radius: 0 0 0 15px;
+  border: none;
+  font-size: .5rem;
+  text-transform: uppercase;
+  color: rgb(125, 125, 125);
+  cursor: pointer;
+  box-shadow: 0;
+  transition: box-shadow .25s, padding .25s;
+}
+
+.all-tasks button:hover {
+  padding: 9px 15px;
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, .3);
+}
