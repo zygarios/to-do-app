@@ -9,18 +9,24 @@
   </head>
 
   <body>
-    <ul class="all-tasks">
-      <li>zadanie-1 <button>Usuń</button></li>
-      <li>zadanie-2 <button>Usuń</button></li>
-      <li>zadanie-3 <button>Usuń</button></li>
-      <li>zadanie-4 <button>Usuń</button></li>
-      <li>zadanie-5 <button>Usuń</button></li>
-      <li>zadanie-6 <button>Usuń</button></li>
-      <li>zadanie-7 <button>Usuń</button></li>
-      <li>zadanie-8 <button>Usuń</button></li>
-      <li>zadanie-9 <button>Usuń</button></li>
-      <li>zadanie-10 <button>Usuń</button></li>
-    </ul>
+    <div class="to-do-list">
+      <h1>Dziennik zadań</h1>
+      <form class="add-task" action="">
+        <input type="text" />
+        <button>Dodaj nowe zadanie</button>
+      </form>
+      <div class="search-count">
+        <h3 class="tasks-count">Liczba zadań: <span></span></h3>
+        <input class="find-task" type="text" placeholder="Wyszukaj zadanie" />
+      </div>
+      <ul class="all-tasks">
+        <li class="task">Kupić żonie kwiaty<button>Usuń</button></li>
+        <li class="task">Zawieźć syna na lekcje karate<button>Usuń</button></li>
+        <li class="task">Zarobić pierwszy milion<button>Usuń</button></li>
+        <li class="task">Ocalić dobro przed złem<button>Usuń</button></li>
+        <li class="task">Zostać superbohaterem<button>Usuń</button></li>
+      </ul>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
